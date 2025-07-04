@@ -142,6 +142,28 @@ nav ul li a:hover::after{
     margin: 10px 0;  
 }
 
+.tab-contents a{
+    text-decoration: none;
+    color: #b54769;
+    font-size: 20px; 
+    position: relative;
+}
+
+.tab-contents a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ababab;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-contents a:hover::after{
+    width: 100%;
+}
+
 .tab-contents ul li span{
     color: #b54769;
     font-size: 20px;
